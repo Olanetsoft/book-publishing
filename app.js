@@ -74,7 +74,7 @@ app.use(function(req, res, next) {
 
 
 //registering the route middleware
-//app.use(usersRoutes);
+app.use(usersRoutes);
 
 //Implement a handler to handle all non-existing route
 app.all('*', (req, res, next) => {
