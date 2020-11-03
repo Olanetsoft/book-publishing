@@ -19,9 +19,10 @@ exports.generatePin = async (req, res, next) => {
     try {
         //create new user
         const newBook = await Publish.create({
-            name: req.body.name,
+            numberOfBooks: req.body.name,
         });
 
+        
 
       
         res.status(201).json({
