@@ -1,0 +1,54 @@
+{
+  "name": "book-publishing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Olanetsoft/book-publishing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Olanetsoft/book-publishing/issues"
+  },
+  "homepage": "https://github.com/Olanetsoft/book-publishing#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "compression": "^1.7.4",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express-rate-limit": "^5.1.3",
+    "express-rate-limiter": "^1.3.1",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.6.1",
+    "helmet": "^4.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.11",
+    "morgan": "^1.10.0",
+    "node-cron": "^2.0.3",
+    "nodemailer": "^6.4.14",
+    "slugify": "^1.4.6",
+    "validator": "^13.1.17"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "mocha": "^8.0.1",
+    "nyc": "^15.1.0",
+    "prettier": "^2.0.5"
+  }
+}
