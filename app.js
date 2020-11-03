@@ -26,6 +26,7 @@ const app = express();
 
 //requiring all routes
 const usersRoutes = require('./routes/usersRoute');
+const publishRoute = require('./routes/publishRoute');
 
 //Global Middleware registered
 //Using morgan only in development
@@ -75,6 +76,7 @@ app.use(function(req, res, next) {
 
 //registering the route middleware
 app.use(usersRoutes);
+app.use(publishRoute);
 
 //Implement a handler to handle all non-existing route
 app.all('*', (req, res, next) => {

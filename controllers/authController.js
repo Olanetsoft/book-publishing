@@ -108,18 +108,6 @@ exports.login = async (req, res, next) => {
         if (process.env.NODE_ENV === 'production') cookieOptions.secure = true;
         res.cookie('jwt', token, cookieOptions);
 
-        // if(req.session.oldUrl){
-        //     var oldUrl = req.session.oldUrl;
-        //     req.session.oldUrl = null;
-        //     res.redirect(oldUrl)
-
-        //     // res.status(200).json({
-        //     //     status: 'success',
-        //     //     token
-        //     // });
-
-        // }
-
         res.status(200).json({
             status: 'success',
             token
@@ -134,8 +122,7 @@ exports.login = async (req, res, next) => {
 //to check if user is logged in
 //and only render pages
 exports.isLoggedIn = async (req, res, next) => {
-    // try {
-
+    
     if (req.cookies.jwt) {
         try {
             // Verify the token 
@@ -168,13 +155,6 @@ exports.isLoggedIn = async (req, res, next) => {
     req.session.oldUrl = req.url
 
     next();
-    // } catch (err) {
-    //     next(new AppError('failed 😒', 401));
-    //     // res.status(400).json({
-    //     //     status: 'failed',
-    //     //     message: err
-    //     // });
-    // }
 };
 
 
