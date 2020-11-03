@@ -8,7 +8,6 @@ const authController = require('../controllers/authController');
 //import publish controller
 const publishController = require('../controllers/authController');
 
-
 //router.post('/api/v1/publish/create', authController.protectRouteToEnableOnlyLoggedInUser, publishController.generatePin);
 
 
